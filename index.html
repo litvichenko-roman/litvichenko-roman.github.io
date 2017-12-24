@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Yandex test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <h1>Progress</h1>
+    <div class="progress">
+        <div class="progress__block">
+            <svg class="progress__svg">
+                <circle class="progress__circle" r="108" cx="113" cy="113" fill="transparent" stroke-dasharray="678.576"></circle>
+                <circle class="progress__circle progress__circle_yellow" r="108" cx="113" cy="113" fill="transparent" stroke-dasharray="678.576"></circle>
+            </svg>
+        </div>
+        <div class="progress__checkboxes">
+            <div class="progress__checkboxes-value progress__checkboxes-value_value">
+                <input class="progress__checkbox-percent" value="99" onkeyup="this.value=this.value.replace(/[^0-9]+/g,''); valid(this);">
+                <label class="progress__label-percent" for="percent">Value</label>
+            </div>
+            <div class="progress__checkbox-animate progress__checkbox-animate_animated">
+                <input type="checkbox" id="progress__checkbox-animate" class="progress__checkbox-animate progress__checkbox-ios-toggle_ios">
+                <label class="progress__label progress__label_gray_green " for="progress__checkbox-animate"></label>
+                <label class="progress__label-name progress__label-name_text" for="progress__checkbox-animate">Animate</label>
+            </div>
+            <div class="progress__checkbox-hide progress__checkbox-hide_hiden">
+                <input type="checkbox" id="progress__checkbox-hide" class="progress__checkbox-hide progress__checkbox-ios-toggle_ios">
+                <label class="progress__label progress__label_gray_green" for="progress__checkbox-hide"></label>
+                <label class="progress__label-name progress__label-name_text" for="progress__checkbox-hide">Hide</label>
+            </div>
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+
+</html>
