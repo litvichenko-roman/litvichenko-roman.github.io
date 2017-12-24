@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Yandex test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <h1>Progress</h1>
+    <div class="progress-bar">
+        <div class="progress_block" id="main_progress_block">
+            <svg id="svg">
+                <circle id="cir" r="108" cx="113" cy="113" fill="transparent" stroke-dasharray="678.576"></circle>
+                <circle class='cir' id="bar" r="108" cx="113" cy="113" fill="transparent" stroke-dasharray="678.576"></circle>
+            </svg>
+        </div>
+        <div class="checboxes">
+            <div class="value">
+                <input id="percent">
+                <label class="lab_per" for="percent">Value</label>
+            </div>
+            <div class="animate">
+                <input type="checkbox" id="check_animate" class="ios-toggle">
+                <label class="checkbox-label" for="check_animate"></label>
+                <label class="lab" for="check_animate">Animate</label>
+            </div>
+            <div class="hide">
+                <input type="checkbox" id="check_hide" class="ios-toggle">
+                <label class="checkbox-label" for="check_hide"></label>
+                <label class="lab" for="check_hide">Hide</label>
+            </div>
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+
+</html>
