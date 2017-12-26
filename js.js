@@ -22,6 +22,7 @@ var progress = {
         var val = value;
         if (val < 0) { val = 0;}
         if (val > 100) { val = 100;}
+        document.getElementsByClassName('progress__checkbox-percent')[0].value = val;
         var circle = document.getElementsByClassName('progress__circle_yellow');
         var r = circle[0].getAttribute('r');
         var c = Math.PI * (r * 2);
